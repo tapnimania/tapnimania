@@ -5,7 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Политика конфиденциальности — Тапнимания</title>
 <style>
-    body { font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif; max-width: 760px; margin: 0 auto; padding: 24px 20px 60px; line-height: 1.6; color: #222; background: #fff; }
+    body {
+        font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 24px 20px 60px;
+        line-height: 1.6;
+        color: #222;
+        background: #fff;
+    }
     h1 { font-size: 26px; margin-bottom: 4px; }
     h2 { font-size: 19px; margin-top: 32px; }
     .updated { color: #666; font-size: 14px; margin-bottom: 32px; }
@@ -18,55 +26,67 @@
 <body>
 
 <h1>Политика конфиденциальности</h1>
-<p class="updated">Приложение «Тапнимания». Последнее обновление: 6 сентября 2026 г.</p>
+<p class="updated">Приложение «Тапнимания». Последнее обновление: 8 октября 2026 г.</p>
 
 <p>Это приложение — простая кликер-игра. Мы не требуем регистрации, не собираем имена, номера телефонов, адреса
 или платёжные данные напрямую. Ниже описано, какие данные всё же обрабатываются и почему.</p>
 
 <h2>1. Игровой прогресс</h2>
-<p>Ваш прогресс в игре (монеты, уровни улучшений, достижения, очки престижа и вознесения) хранится только
-локально на вашем устройстве (SharedPreferences). Мы не передаём эти данные на какие-либо серверы и не имеем
+<p>Ваш прогресс в игре (монеты, уровни улучшений, достижения, очки престижа и вознесения) хранится на вашем устройстве (SharedPreferences). Системное резервное копирование Android может сохранять данные в соответствии с настройками устройства. Мы не передаём эти данные на какие-либо серверы и не имеем
 к ним доступа.</p>
 
-<h2>2. Реклама (Google AdMob)</h2>
-<p>Приложение показывает рекламу через сервис Google AdMob (баннеры, полноэкранная и rewarded-реклама
-«посмотреть за награду»). Для показа и персонализации рекламы AdMob и его партнёры могут собирать:</p>
+<h2>2. Реклама (Яндекс Реклама и VK Реклама)</h2>
+<p>Приложение показывает рекламу (полноэкранную и «посмотреть за награду») через Медиацию Яндекса (Yandex Mobile Ads SDK).
+В показе рекламы могут участвовать Яндекс и подключённые к Медиации рекламные сети, в том числе VK Реклама (бывш. myTarget;
+в состав её SDK входит инструмент MyTracker). Для показа и персонализации рекламы эти компании и их партнёры могут собирать:</p>
 <ul>
     <li>рекламный идентификатор устройства (Advertising ID / GAID);</li>
-    <li>общие технические данные устройства (модель, версия ОС, язык, приблизительное местоположение по IP);</li>
-    <li>данные о взаимодействии с рекламой (показы, клики).</li>
+    <li>общие технические данные устройства (модель, версия ОС, язык, часовой пояс, приблизительное местоположение по IP);</li>
+    <li>данные о взаимодействии с рекламой (показы, клики, просмотры видео).</li>
 </ul>
-<p>Эти данные обрабатываются компанией Google в соответствии с
-<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Политикой конфиденциальности Google</a>
-и <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Политикой использования технологий в рекламе</a>.
+<p>Эти данные обрабатываются компанией Яндекс в соответствии с
+<a href="https://yandex.ru/legal/confidential/" target="_blank" rel="noopener">Политикой конфиденциальности Яндекса</a>
+и <a href="https://yandex.ru/legal/mobileads_sdk_agreement/" target="_blank" rel="noopener">условиями использования Yandex Mobile Ads SDK</a>,
+а компанией VK — в соответствии с документами, опубликованными в разделе
+<a href="https://ads.vk.ru/en/help/partner/partner_documents/partner_legal" target="_blank" rel="noopener">юридических документов Рекламной сети VK</a>.
 Вы можете ограничить персонализацию рекламы в настройках своего устройства (Android: Настройки → Google →
 Реклама → «Отключить персонализацию рекламы»).</p>
 
-<h2>3. Уведомления</h2>
+<h2>3. Аналитика и учёт установок (Яндекс AppMetrica)</h2>
+<p>Для статистики использования приложения и оценки эффективности рекламы используется сервис Яндекс AppMetrica (AppMetrica SDK).
+Он может получать:</p>
+<ul>
+    <li>информацию об устройстве (производитель, модель, версия ОС, разрешение экрана), язык и страну (по IP-адресу);</li>
+    <li>рекламный идентификатор устройства (Advertising ID / GAID) и идентификатор, присвоенный устройству самой AppMetrica;</li>
+    <li>данные о сессиях (время и количество запусков) и версии приложения;</li>
+    <li>источник установки (из какой рекламной кампании или магазина пришла установка);</li>
+    <li>сведения об ошибках и сбоях приложения.</li>
+</ul>
+<p>Передача данных о местоположении в AppMetrica отключена, приложение не запрашивает доступ к точному местоположению.
+Пользовательские игровые события (внутриигровые действия) в AppMetrica не отправляются. Данные обрабатываются в соответствии с
+<a href="https://yandex.ru/legal/appmetrica_sdk_agreement/ru/" target="_blank" rel="noopener">лицензионным соглашением Yandex AppMetrica SDK</a>
+и Политикой конфиденциальности Яндекса.</p>
+
+<h2>4. Уведомления</h2>
 <p>Приложение может показывать локальное уведомление-напоминание о накопленном offline-доходе. Уведомление
 формируется и показывается полностью на вашем устройстве, никакие данные для этого никуда не отправляются.</p>
 
-<h2>4. Дети</h2>
+<h2>5. Дети</h2>
 <p>Приложение не предназначено специально для детей младше 13 лет и не запрашивает и не собирает
 персональные данные, которые могли бы это подразумевать.</p>
 
-<h2>5. Передача и продажа данных</h2>
+<h2>6. Передача и продажа данных</h2>
 <p>Мы не продаём и не передаём третьим лицам никакие данные, кроме тех, что автоматически обрабатываются
-рекламным SDK Google AdMob, как описано выше.</p>
+рекламными SDK (Яндекс, VK) и аналитическим SDK Яндекс AppMetrica, как описано выше.</p>
 
-<h2>6. Изменения политики</h2>
+<h2>7. Изменения политики</h2>
 <p>Мы можем время от времени обновлять эту страницу. Дата последнего обновления указана в начале документа.</p>
 
-<h2>7. Контакты</h2>
-<p>По вопросам, связанным с конфиденциальностью, пишите: <strong>alex307gavr@gmail.com</strong>.</p>
+<h2>8. Контакты</h2>
+<p>По вопросам, связанным с конфиденциальностью, пишите: <strong>sanya307gavrilov@yandex.ru</strong>.</p>
 
 <hr>
 
-<p class="lang-note">English summary: this app stores your game progress locally on your device only.
-It shows ads via Google AdMob, which may collect an advertising ID and device/technical data for ad
-delivery and personalization, governed by
-<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.
-We do not collect or sell any personal data ourselves. Contact: <strong>alex307gavr@gmail.com</strong>.</p>
-
+<p class="lang-note">English summary: game progress is stored on the device; Android system backup may copy it according to device settings. The app uses Yandex Mobile Ads SDK for advertising (with VK Ads as an additional mediated ad network) and Yandex AppMetrica for analytics and install attribution. These SDKs may process advertising identifiers, IP addresses, device information, session data and ad interactions. Location sharing with AppMetrica is disabled. See <a href="https://yandex.ru/legal/confidential/">Yandex Privacy Policy</a> and <a href="https://ads.vk.ru/en/help/partner/partner_documents/partner_legal">VK Ad Network legal documents</a>. Contact: sanya307gavrilov@yandex.ru.</p>
 </body>
 </html>
